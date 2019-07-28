@@ -1,18 +1,9 @@
 import React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
-
+import { View } from 'react-native';
 import './config/ReactotronConfig';
 
-export default function App() {
-  return (
-    <View>
-      <Text style={styles.text}>Oi</Text>
-    </View>
-  );
-}
+import Routes from './routes';
 
-const styles = StyleSheet.create({
-  text: {
-    color: 'red',
-  },
-});
+export default function App() {
+  return <Routes />;
+}
